@@ -1,6 +1,6 @@
 {
-    "name" : "anax/noname",
-    "description": "A me page for the ramverk1 course.",
+    "name" : "hatooz/weather-module",
+    "description": "Module for weather forecast",
     "license": "MIT",
     "minimum-stability": "beta",
     "prefer-stable": true,
