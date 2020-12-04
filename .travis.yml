@@ -14,8 +14,8 @@ git:
 before_script:
     - make install check
 
-# script:
-#     - make test
+script:
+    - make test
 
 # notifications:
 #     irc: "irc.freenode.org#dbwebb"
