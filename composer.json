@@ -11,8 +11,8 @@
         "anax/commons": "^2.0.14"
     },
     "require-dev": {
-        "anax/di": "^2.0",
         "anax/cache": "2.0.0-beta.5",
+        "anax/di": "^2.0",
         "anax/configure": "^2.0",
         "anax/session": "^2.0",
         "anax/view": "^2.0",
