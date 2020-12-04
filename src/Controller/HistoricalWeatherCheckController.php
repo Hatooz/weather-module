@@ -70,9 +70,9 @@ class HistoricalWeatherCheckController implements ContainerInjectableInterface
 
     public function weatherActionPost($withCoords)
     {
-        $ip = $this->di->get("request")->getPost("lat") ? $this->di->get("request")->getPost("lat") : $withCoords ? null :  "127.0.0.1";
-        $lat = $this->di->get("request")->getPost("lat") ? $this->di->get("request")->getPost("lat") : $withCoords ? "56.06" :  null;
-        $lon = $this->di->get("request")->getPost("lon") ? $this->di->get("request")->getPost("lon") : $withCoords ? "14.15" :  null;
+        $ip = ($this->di->get("request")->getPost("lat") ? $this->di->get("request")->getPost("lat") : $withCoords) ? null :  "127.0.0.1";
+        $lat = ($this->di->get("request")->getPost("lat") ? $this->di->get("request")->getPost("lat") : $withCoords) ? "56.06" :  null;
+        $lon = ($this->di->get("request")->getPost("lon") ? $this->di->get("request")->getPost("lon") : $withCoords) ? "14.15" :  null;
         $service = $this->di->get("weatherservice");
         $data = [
             "content" => $service->getWeatherThroughMultiCurl($ip, $lat, $lon),
