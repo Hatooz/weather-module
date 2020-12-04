@@ -13,11 +13,13 @@
     },
     "require-dev": {
         "anax/di": "^2.0",
+        "anax/request": "^2.0.7",        
         "anax/cache": "2.0.0-beta.5",
         "anax/configure": "^2.0",
         "anax/session": "^2.0",
         "anax/view": "^2.0",
-        "anax/response": "^2.0",
+        "anax/response": "^2.0.2",
+        "anax/url": "^2.0.1",
         "phpunit/phpunit": "^7"
     }
 }

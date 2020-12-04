@@ -52,6 +52,22 @@ class HistoricalWeatherCheckControllerTest extends TestCase
         $this->assertInternalType("object", $res);
     }
 
+    
+    public function testWeatherNoCoordsAction()
+    {
+        $this->di->get("session")->start();
+        $res = $this->controller->weatherActionPost(false);
+        $this->assertInternalType("object", $res);
+    }
+
+    
+    public function testWeatherCoordsAction()
+    {
+        $this->di->get("session")->start();
+        $res = $this->controller->weatherActionPost(true);
+        $this->assertInternalType("object", $res);
+    }
+
     /**
      * Test the route "dump-di".
      */
